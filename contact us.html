@@ -29,17 +29,64 @@ Student Number: C0937306
         <h1>Contact Us</h1>
         <p>If you have any questions, comments, or need further information, please reach out to us using the contact details below:</p>
         
-        <h2>Address</h2>
-        <p>123 elgin street, Ottawa, Canada, K2A1G5</p>
-        
-        <h2>Email</h2>
-        <p><a href="mailto:info@dutchovensco.com">info@dutchovensco.com</a></p>
-        
-        <h2>Phone</h2>
-        <p>+1 (234) 567-8901</p>
-        
-        <h2>Office Hours</h2>
-        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Please fill out the form below to contact us. Fields marked with * are required.</p>
+
+            <form action="#" method="post" id="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <ol>
+                        <li>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required autofocus>
+                        </li>
+                        <li>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                        </li>
+                        <li>
+                            <label>Preferred Contact Method:</label>
+                            <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                            <label for="contact-email">Email</label>
+                            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                            <label for="contact-phone">Phone</label>
+                        </li>
+                        <li>
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here..." required></textarea>
+                        </li>
+                        <li>
+                            <label for="date">Preferred Date:</label>
+                            <input type="date" id="date" name="date">
+                        </li>
+                        <li>
+                            <label for="subscribe">Subscribe to newsletter:</label>
+                            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        </li>
+                        <li>
+                            <label for="department">Department:</label>
+                            <select id="department" name="department">
+                                <option value="sales">Sales</option>
+                                <option value="support">Support</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+                        </li>
+                    </ol>
+
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Reset Form</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
     </main>
     <footer>
         &copy; Copyright 2099. All Rights Reserved.<br>
